@@ -35,6 +35,8 @@
 // }
 // var result = subtract(100, 50);
 // console.log('resutl value: ', result)
+// console.log('resutl value: ', result)
+
 
 
 function getFactorial(num) {
