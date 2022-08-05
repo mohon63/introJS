@@ -40,6 +40,7 @@
 // console.log('resutl value: ', result)
 // console.log('resutl value: ', result)
 // console.log('resutl value: ', result)
+// console.log('resutl value: ', result)
 
 
 
@@ -65,16 +66,30 @@
 // const total = arryTotal([20, 30, 50]);
 // console.log('Array sum : ', total)
 
-function largestElement(numbers) {
-    let largest = numbers[0];
-    for (let i = 0; i < numbers.length; i++) {
-        const element = numbers[i];
-        if (element < largest) {
-            largest = element;
+// function largestElement(numbers) {
+//     let largest = numbers[0];
+//     for (let i = 0; i < numbers.length; i++) {
+//         const element = numbers[i];
+//         if (element < largest) {
+//             largest = element;
+//         }
+//     }
+//     return largest;
+// }
+// const largestNumber = largestElement([2, 5, 1, 10, 12]);
+// const lowestNumber = largestElement([-2, -5, -1, -10, -12]);
+// console.log('largest number ', largestNumber);
+
+const names = ['mohon', 'raihan', 'iftay', 'abbas', 'iftay', 'abbas'];
+function removeDuplicate(names) {
+    const uniq = [];
+    for (const element of names) {
+        console.log(element);
+        if (uniq.indexOf(element) == -1) {
+            uniq.push(element);
         }
     }
-    return largest;
+    return uniq;
 }
-const largestNumber = largestElement([2, 5, 1, 10, 12]);
-const lowestNumber = largestElement([-2, -5, -1, -10, -12]);
-console.log('largest number ', largestNumber);
+const uniqName = removeDuplicate(names);
+console.log(uniqName);
