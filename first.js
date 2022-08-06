@@ -82,16 +82,45 @@
 // const lowestNumber = largestElement([-2, -5, -1, -10, -12]);
 // console.log('largest number ', largestNumber);
 
-const names = ['mohon', 'raihan', 'iftay', 'abbas', 'iftay', 'abbas'];
-function removeDuplicate(names) {
-    const uniq = [];
-    for (const element of names) {
-        console.log(element);
-        if (uniq.indexOf(element) == -1) {
-            uniq.push(element);
-        }
+// const names = ['mohon', 'raihan', 'iftay', 'abbas', 'iftay', 'abbas'];
+// function removeDuplicate(names) {
+//     const uniq = [];
+//     for (const element of names) {
+//         console.log(element);
+//         if (uniq.indexOf(element) == -1) {
+//             uniq.push(element);
+//         }
+//     }
+//     return uniq;
+// }
+// const uniqName = removeDuplicate(names);
+// console.log(uniqName);
+
+
+// function find_max(nums) {
+//     // let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
+//     let max_num = 0
+//     for (let num of nums) {
+//         if (num > max_num) {
+
+//             // (Fill in the missing line here)
+//             max_num += 1;
+//             console.log('hi max number ', max_num);
+//         }
+//     }
+//     return max_num;
+// }
+// const maxNum = find_max(6);
+// console.log(maxNum);
+
+
+function fibo(i) {
+    if (i == 0) {
+        return 0;
     }
-    return uniq;
-}
-const uniqName = removeDuplicate(names);
-console.log(uniqName);
+    else if (i == 1) {
+        return 1;
+    }
+    return fibo(i - 1) + fibo(i - 2);
+};
+console.log(fibo(7))
